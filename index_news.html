@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Инновации 2023|Иркутская обасть</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style_news.css">
+	<link rel="shortcut icon" href="imges\w3.png">
+	<link rel="stylesheet" href="css/all_news_style.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+	<nav class="navbar">
+		<div class="navbar-container container">
+			<input type="checkbox" name="" id="">
+			<div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</div>
+			<ul class="menu-items">
+				<li><a href="#showcase">Главная</a></li>
+				<li><a href="#materials">Материалы</a></li>
+				<li><a href="speekers.html">Спикеры</a></li>
+				<li><a href="#tracks">Треки</a></li>
+				<li><a href="#form_uch">Программа</a></li>
+				<li><a href="news.html">Новости</a></li>
+			</ul>
+			<h1 class="logo"><img src="imges\nav_logo.jpg" alt="" class="img_logo"></h1>
+		</div>
+	</nav>
+	<div class="news">
+		<h1 class="name_news">Новости </h1>
+		<div class="all_news_container">
+			<div class="grid">
+				<div class="grid__item">
+					<div class="card"><img class="card__img" src="imges/1595710457_30-p-sine-fioletovie-foni-34.jpg">
+						<div class="card__content">
+							<h1 class="card__header">14 февраля 2023 г. в 14.00</h1>
+							<p class="card__text">Открытие дистанционного Регионального Форума «Концепция развития:
+								инновационный
+								формат дополнительного образования детей Иркутской области»</p>
+							<button class="card__btn"><a href="http://38context-innovations.ru/news3.html">Узнать больше
+									<span>&rarr;</span></a></button>
+						</div>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="card"><img class="card__img"
+							src="imges/1612170648_133-p-fon-gradient-sinii-fioletovii-155.jpg" alt="Desert">
+						<div class="card__content">
+							<h1 class="card__header">xx февраля 2023 г. в xx.xx</h1>
+							<p class="card__text">Скоро</p>
+							<button class="card__btn">Узнать больше <span>&rarr;</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="grid__item">
+					<div class="card"><img class="card__img" src="imges/logo_screen.png">
+						<div class="card__content">
+							<h1 class="card__header">xx февраля 2023 г. в xx.xx</h1>
+							<p class="card__text">Скоро</p>
+							<button class="card__btn">Узнать больше <span>&rarr;</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer" id="footer">
+		<div class="footer__redes">
+			<ul class="footer__redes-wrapper">
+				<li>
+					<a href="https://www.youtube.com/@user-by1xe7tw1q" class="footer__link">
+						<i class="fab fa-youtube"></i>
+						Youtube
+					</a>
+				</li>
+				<li>
+					<a href="https://vk.com/rmc_38" class="footer__link">
+						<i class="fab fa-vk"></i>
+						VK
+					</a>
+				</li>
+				<li>
+					<a href="https://t.me/+X46RSAJ2ZW9mYmQ6" class="footer__link">
+						<i class="fab fa-telegram"></i>
+						Telegram
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__link">
+						<i class="fa fa-phone"></i>
+						8 (3952) 500-448
+					</a>
+				</li>
+				<li>
+					<a href="#" class="footer__link">
+						<i class="fa fa-envelope-open"></i>
+						detirk38@mail.ru
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="separador"></div>
+		<p class="footer__texto">© 2023 Региональный методический семинар-совещание «Дополнительное образование детей
+			Иркутской области в контексте инноваций». </p>
+	</footer>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$("a").on("click", function (event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+
+				var hash = this.hash;
+
+				$("html, body").animate(
+					{
+						scrollTop: $(hash).offset().top,
+					},
+					800,
+					function () {
+						window.location.hash = hash;
+					}
+				);
+			}
+		});
+	});
+</script>
+
+</html>
